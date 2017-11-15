@@ -1,0 +1,62 @@
+<div ng-controller="myController" class="ng-scope CharacterWrapper">
+  <div class="">
+    <h2>Characters</h2>
+          <div ng-repeat="character in characters | orderBy:column" class="ng-scope">
+            <!--Name-->
+            <hr class="CharacterSeparator">
+            <h3>{{character.PersonalInfo.Name}}</h3>
+            <div class="PersonalInfo">
+                  <p>
+                    Title: <b>{{character.Focus.Title}}</b>
+                  </br>
+                    Personality: <b>{{character.PersonalInfo.Personality}}</b>
+                  </br>
+                    Gender: <b>{{character.PersonalInfo.Gender}}</b>
+                  </br>
+                    Race: <b>{{character.PersonalInfo.Race}}</b>
+                  </p>
+                  <p>
+                    Focus: <b>{{character.Focus.Focus}}</b>
+                  </p>
+            </div>
+
+            <div>
+                  <h4>Ability Scores</h4>
+                  <table class="AbilityScores">
+                    <tr>
+                      <td><b>S</b>TR: </td>
+                      <td class="ASvalue"><b>{{character.AbilityScores.Strength}}</b></td>
+                    </tr>
+                    <tr>
+                      <td><b>A</b>GI: </td>
+                      <td class="ASvalue"><b>{{character.AbilityScores.Agility}}</b></td>
+                    </tr>
+                    <tr>
+                      <td><b>E</b>ND: </td>
+                      <td class="ASvalue"><b>{{character.AbilityScores.Endurance}}</b></td>
+                    </tr>
+                    <tr>
+                      <td><b>K</b>NO: </td>
+                      <td class="ASvalue"><b>{{character.AbilityScores.Knowledge}}</b></td>
+                    </tr>
+                    <tr>
+                      <td><b>W</b>IS: </td>
+                      <td class="ASvalue"><b>{{character.AbilityScores.Wisdom}}</b></td>
+                    </tr>
+                    <tr>
+                      <td><b>C</b>HA: </td>
+                      <td class="ASvalue"><b>{{character.AbilityScores.Charisma}}</b></td>
+                    </tr>
+                  </table>
+            </div>
+            <div class="CharacterTraits">
+              <h4>Character Traits</h4>
+                <p>
+                  Positive: <b>{{(character.CharacterTraits.Positive +'').replace('['/g);}}</b></br>
+                  Negative: <b>{{(character.CharacterTraits.Negative +'').replace('['/g);}}</b></br>
+                </p>
+            </div>
+
+          </div>
+  </div>
+</div>

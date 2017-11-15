@@ -1,0 +1,261 @@
+
+<div class="CreatorWrapper" ng-controller="newCharacterController">
+
+<div class="CreateCharacterForm">
+<form name="CharacterForm" ng-submit="CharacterForm.$valid && addCharacter(character)" novaldiate>
+
+
+<!-- ERRORS -->
+  <div class="alert alert-danger" ng-show="(CharacterForm.newCharacter.character.PersonalInfo.Name.$dirty && CharacterForm.newCharacter.character.PersonalInfo.Name.$invalid) || (CharacterForm.newCharacter.character.Focus.Title.$dirty && CharacterForm.newCharacter.character.Focus.Title.$invalid)" role="alert">
+    <ul>
+      <li ng-show="CharacterForm.newCharacter.character.PersonalInfo.Name.$dirty && CharacterForm.newCharacter.character.PersonalInfo.Name.$invalid">Name is required.</li>
+      <li ng-show="CharacterForm.newCharacter.character.Focus.Title.$dirty && CharacterForm.newCharacter.character.Focus.Title.$invalid">Title is required.</li>
+    </ul>
+  </div>
+<!-- NAME -->
+<div>
+<div class="InlineBlock">
+  <div class="form-group" ng-class="{'has-error': CharacterForm.character.PersonalInfo.Name.$dirty && CharacterForm.character.PersonalInfo.Name.$invalid, 'has-success':CharacterForm.author}">
+  <label for="Name" class="control-label">Name</label>
+  <textarea class="form-control" name="Name" placeholder="Choose your name..." ng-model="newCharacter.character.PersonalInfo.Name" required></textarea>
+  </div>
+</div>
+<!-- TITLE -->
+<div class="InlineBlock">
+  <div class="form-group" ng-class="{'has-error': CharacterForm.character.Focus.Title.$dirty && CharacterForm.character.Focus.Title.$invalid, 'has-success':CharacterForm.author}">
+  <label for="Name" class="control-label">Title</label>
+  <textarea class="form-control" name="Name" placeholder="Choose your title." ng-model="newCharacter.character.Focus.Title" required></textarea>
+  </div>
+</div>
+</div>
+<!-- PERSONALITY -->
+<div>
+  <div class="InlineBlock">
+<div class="form-group" ng-class="{'has-error': CharacterForm.character.PersonalInfo.Personality.$dirty && CharacterForm.character.PersonalInfo.Personality.$invalid, 'has-success':CharacterForm.author}">
+  <label for="Personality" class="control-label">Personality</label>
+  <select class="form-control" name="Personality" ng-model="newCharacter.character.PersonalInfo.Personality">
+    <option value="Benevolent">Benevolent</option>
+    <option value="Honorable">Honorable</option>
+    <option value="Neutral">Neutral</option>
+    <option value="Dishonorable">Dishonorable</option>
+    <option value="Evil">Evil</option>
+  </select>
+</div>
+</div>
+<!-- GENDER -->
+<div class="InlineBlock">
+<div class="form-group" ng-class="{'has-error': CharacterForm.character.PersonalInfo.Gender.$dirty && CharacterForm.character.PersonalInfo.Gender.$invalid, 'has-success':CharacterForm.author}">
+<label for="Gender" class="control-label">Gender</label>
+<select class="form-control" name="Gender" ng-model="newCharacter.character.PersonalInfo.Gender">
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Hidden">Hidden</option>
+</select>
+</div>
+</div>
+
+<!-- RACE -->
+<div class="InlineBlock">
+<div class="form-group" ng-class="{'has-error': CharacterForm.character.PersonalInfo.Race.$dirty && CharacterForm.character.PersonalInfo.Race.$invalid, 'has-success':CharacterForm.author}">
+<label for="Race" class="control-label">Race</label>
+<select class="form-control" name="Race" ng-model="newCharacter.character.PersonalInfo.Race">
+<option value="Human">Human</option>
+<option value="Elf">Elf</option>
+<option value="Dwarf">Dwarf</option>
+<option value="Gnome">Gnome</option>
+<option value="Kindred">Kindred</option>
+<option value="Orc">Orc</option>
+<option value="Ogre">Ogre</option>
+<option value="Goblin">Goblin</option>
+<option value="Other">Other</option>
+</select>
+</div>
+</div>
+<!-- FOCUS -->
+<div class="InlineBlock">
+<div class="form-group" ng-class="{'has-error': CharacterForm.character.Focus.Focus.$dirty && CharacterForm.character.Focus.Focus.$invalid, 'has-success':CharacterForm.author}">
+<label for="Race" class="control-label">Focus</label>
+<select class="form-control" name="Race" ng-model="newCharacter.character.Focus.Focus">
+<option value="Warrior">Warrior</option>
+<option value="Arcanist">Arcanist</option>
+<option value="Spiritualist">Spiritualist</option>
+<option value="Jack">Jack</option>
+</select>
+</div>
+</div>
+</div>
+<!-- ABILITY SCORES -->
+<h4>Ability Scores</h4>
+<div class="AbilityBodyScores">
+
+
+<div class="MiniCentered">
+        <!-- STRENGTH -->
+<div class="form-group MiniCreate" ng-class="{'has-error': CharacterForm.character.AbilityScores.Strength.$dirty && CharacterForm.character.AbilityScores.Strength.$invalid, 'has-success':CharacterForm.author}">
+<label for="Race" class="control-label">Strength</label>
+<select class="form-control" name="Race" ng-model="newCharacter.character.AbilityScores.Strength">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+        <!-- AGILITY -->
+<div class="form-group MiniCreate" ng-class="{'has-error': CharacterForm.character.AbilityScores.Agility.$dirty && CharacterForm.character.AbilityScores.Agility.$invalid, 'has-success':CharacterForm.author}">
+<label for="Race" class="control-label">Agility</label>
+<select class="form-control" name="Race" ng-model="newCharacter.character.AbilityScores.Agility">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+        <!-- ENDURANCE -->
+<div class="form-group MiniCreate" ng-class="{'has-error': CharacterForm.character.AbilityScores.Endurance.$dirty && CharacterForm.character.AbilityScores.Endurance.$invalid, 'has-success':CharacterForm.author}">
+<label for="Race" class="control-label">Endurance</label>
+<select class="form-control" name="Race" ng-model="newCharacter.character.AbilityScores.Endurance">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+
+</div>
+        <!-- KNOWLEDGE -->
+<div class="AbilityBodyScores">
+
+<div class="form-group MiniCreate" ng-class="{'has-error': CharacterForm.character.AbilityScores.Knowledge.$dirty && CharacterForm.character.AbilityScores.Knowledge.$invalid, 'has-success':CharacterForm.author}">
+<label for="Race" class="control-label">Knowledge</label>
+<select class="form-control" name="Race" ng-model="newCharacter.character.AbilityScores.Knowledge">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+        <!-- WISDOM -->
+<div class="form-group MiniCreate" ng-class="{'has-error': CharacterForm.character.AbilityScores.Wisdom.$dirty && CharacterForm.character.AbilityScores.Wisdom.$invalid, 'has-success':CharacterForm.author}">
+<label for="Race" class="control-label">Wisdom</label>
+<select class="form-control" name="Race" ng-model="newCharacter.character.AbilityScores.Wisdom">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+        <!-- CHARISMA -->
+<div class="form-group MiniCreate" ng-class="{'has-error': CharacterForm.character.AbilityScores.Charisma.$dirty && CharacterForm.character.AbilityScores.Charisma.$invalid, 'has-success':CharacterForm.author}">
+<label for="Race" class="control-label">Charisma</label>
+<select class="form-control" name="Race" ng-model="newCharacter.character.AbilityScores.Charisma">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+</div>
+</div>
+</div>
+<!-- CHARACTER TRAITS -->
+
+<div class="form-group" ng-class="{'has-error': CharacterForm.character.CharacterTraits.Positive.$dirty && CharacterForm.character.CharacterTraits.Positive.$invalid, 'has-success':CharacterForm.author}">
+<label for="Name" class="control-label">Positive Traits</label>
+<textarea class="form-control" name="Name" placeholder="Enter chosen Positive traits here..." ng-model="newCharacter.character.CharacterTraits.Positive" required></textarea>
+</div>
+
+<div class="form-group" ng-class="{'has-error': CharacterForm.character.CharacterTraits.Negative.$dirty && CharacterForm.character.CharacterTraits.Negative.$invalid, 'has-success':CharacterForm.author}">
+<label for="Name" class="control-label">Negative Traits</label>
+<textarea class="form-control" name="Name" placeholder="Enter chosen Negative traits here..." ng-model="newCharacter.character.CharacterTraits.Negative" required></textarea>
+</div>
+
+
+<input type="submit" class="btn btn-default AddCharacterButton" value="Add Character">
+</form>
+</div>
+
+<div class="CreationResults">
+<div class="ResultsCentered">
+  <h3>Character Preview</h3>
+  <h3>&nbsp;<b>{{newCharacter.character.PersonalInfo.Name}}</b>&nbsp;</h3>
+  <p>Title: <b>{{newCharacter.character.Focus.Title}}</b></p>
+  <p>Personality: <b>{{newCharacter.character.PersonalInfo.Personality}}</b></p>
+  <p>Gender: <b>{{newCharacter.character.PersonalInfo.Gender}}</b></p>
+  <p>Race: <b>{{newCharacter.character.PersonalInfo.Race}}</b></p>
+  <p>Focus: <b>{{newCharacter.character.Focus.Focus}}</b></p>
+<h4>Ability Scores</h4>
+</div>
+
+  <table class="AbilityScores">
+    <tr>
+      <td><b>S</b>TR: </td>
+      <td class="ASvalue"><b>{{newCharacter.character.AbilityScores.Strength}}</b></td>
+    </tr>
+    <tr>
+      <td><b>A</b>GI: </td>
+      <td class="ASvalue"><b>{{newCharacter.character.AbilityScores.Agility}}</b></td>
+    </tr>
+    <tr>
+      <td><b>E</b>ND: </td>
+      <td class="ASvalue"><b>{{newCharacter.character.AbilityScores.Endurance}}</b></td>
+    </tr>
+    <tr>
+      <td><b>K</b>NO: </td>
+      <td class="ASvalue"><b>{{newCharacter.character.AbilityScores.Knowledge}}</b></td>
+    </tr>
+    <tr>
+      <td><b>W</b>IS: </td>
+      <td class="ASvalue"><b>{{newCharacter.character.AbilityScores.Wisdom}}</b></td>
+    </tr>
+    <tr>
+      <td><b>C</b>HA: </td>
+      <td class="ASvalue"><b>{{newCharacter.character.AbilityScores.Charisma}}</b></td>
+    </tr>
+  </table>
+
+  <div class="ResultsCentered">
+
+    <h4>Character Traits</h4>
+
+    <p>Positive: <b>{{newCharacter.character.CharacterTraits.Positive}}</b></p>
+    <p>Negative: <b>{{newCharacter.character.CharacterTraits.Negative}}</b></p>
+  </div>
+</div>
+
+
+</div>

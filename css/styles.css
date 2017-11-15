@@ -1,0 +1,329 @@
+body {
+  background-color: #C9FFE0;
+}
+
+h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.CurrentDevelopment {
+  text-align: left;
+}
+
+/*Character List*/
+.CharacterWrapper {
+  box-shadow: 0px 0px 20px #454545;
+  margin: auto;
+  padding-top: 136px;
+  padding-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  bottom: 136px;
+  width: 70%;
+  text-align: center;
+  background-color: #fefdfd;
+  z-index: 1;
+
+}
+
+@media (max-width: 720px){
+  .CharacterWrapper {
+  box-shadow: 0px 0px 20px #454545;
+  margin: auto;
+  padding-top: 136px;
+  padding-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  bottom: 136px;
+  width: 100%;
+  text-align: center;
+  background-color: #fefdfd;
+  z-index: 1;
+
+}}
+
+.CharacterSeparator {
+  width: 85%;
+  border-color: black;
+}
+
+.AbilityScores {
+  text-align: right;
+  margin: auto;
+}
+
+.AbilityScores .ASvalue {
+  padding-left: 1em;
+}
+/*Character Create*/
+
+.CreatorWrapper {
+  box-shadow: 0px 0px 20px #454545;
+  margin: auto;
+  padding-top: 180px;
+  padding-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  bottom: 180px;
+  width: 70%;
+  text-align: center;
+  background-color: #fefdfd;
+  z-index: 1;
+
+}
+
+@media (max-width: 720px){
+  .CreatorWrapper {
+  box-shadow: 0px 0px 20px #454545;
+  margin: auto;
+  padding-top: 136px;
+  padding-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  bottom: 136px;
+  width: 100%;
+  text-align: center;
+  background-color: #fefdfd;
+  z-index: 1;
+
+}}
+
+.InlineBlock {
+  display: inline-block;
+  margin: 0 1em 0 1em;
+}
+
+.CreateLeft {
+  display: inline-block;
+  width: 50%;
+}
+
+.CreateRight {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  top: 20em;
+}
+
+.CreateHeader {
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+.CreateCharacterForm {
+  width: 80%;
+  margin: auto;
+  display: inline-block;
+}
+
+.CreationResults {
+  display: inline-block;
+  margin: 2em;
+  min-width: 40%;
+}
+
+@media (max-width: 720px){
+.CreationResults {
+  display: block;
+}
+}
+.ResultsCentered {
+  text-align: center;
+}
+
+.MiniCreate {
+  max-width: 10%;
+  margin:0.7em;
+  min-width: 5em;
+  display: inline-block;
+  text-align: center;
+}
+
+.MiniCentered {
+  margin: auto;
+  text-align: center;
+}
+
+.AddCharacterButton {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/*Banner*/
+.HeadBanner {
+  box-shadow: 0px 2px 0px #454545;
+  background-color: #63CC91;
+  height: 88px;
+  width: 70%;
+  margin: auto;
+  border: 2px black;
+  border-radius: 0px 0px 15px 15px;
+  padding: 1.5em;
+  font-family: Helvetica;
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 720px){
+  .HeadBanner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 510px){
+  .HeadBanner {
+    height: 120px;
+  }
+}
+
+.CharacterHeadBanner {
+  box-shadow: 0px 2px 0px #454545;
+  background-color: #63CC91;
+  height: 88px;
+  width: 70%;
+  margin: auto;
+  border: 2px black;
+  border-radius: 0px 0px 15px 15px;
+  padding: 1.5em;
+  font-family: Helvetica;
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 720px){
+  .CharacterHeadBanner {
+    width: 100%;
+  }
+}
+
+.CreateHeadBanner {
+  box-shadow: 0px 2px 0px #454545;
+  background-color: #63CC91;
+  height: 88px;
+  width: 70%;
+  margin: auto;
+  border: 2px black;
+  border-radius: 0px 0px 15px 15px;
+  padding: 1.5em;
+  font-family: Helvetica;
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 720px){
+  .CreateHeadBanner {
+    box-shadow: 0px 2px 0px #454545;
+    background-color: #63CC91;
+    height: 88px;
+    width: 100%;
+    margin: auto;
+    border: 2px black;
+    border-radius: 0px 0px 15px 15px;
+    padding: 1.5em;
+    font-family: Helvetica;
+    position: relative;
+    z-index: 3;
+  }
+}
+
+
+.HeadBanner h1 {
+  padding: 0px;
+  margin: auto;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.CreateHeadBanner h1 {
+  padding: 0px;
+  margin: auto;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.CharacterHeadBanner h1 {
+  padding: 0px;
+  margin: auto;
+  text-align: center;
+  font-weight: bolder;
+}
+
+/*NavBar*/
+.NavBar {
+  box-shadow: 0px 2px 0px #454545;
+  background-color: #3E7F5B;
+  height: 3em;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  border: 2px black;
+  border-radius: 0px 0px 15px 15px;
+  padding: 1.2em 2em 0 2em;
+  font-family: Helvetica;
+  position: relative;
+  bottom: 12px;
+  z-index: 2;
+}
+
+@media (max-width: 720px){
+  .NavBar {
+    box-shadow: 0px 2px 0px #454545;
+    background-color: #3E7F5B;
+    height: 3em;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    border: 2px black;
+    border-radius: 0px 0px 15px 15px;
+    padding: 1.2em 2em 0 2em;
+    font-family: Helvetica;
+    position: relative;
+    bottom: 12px;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 478px){
+  .NavBar {
+    box-shadow: 0px 2px 0px #454545;
+    background-color: #3E7F5B;
+    height: 3em;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    border: 2px black;
+    border-radius: 0px 0px 15px 15px;
+    padding: 1.2em 0 0 0;
+    font-family: Helvetica;
+    position: relative;
+    bottom: 12px;
+    z-index: 2;
+  }
+}
+
+.NavLink {
+  font-family: Helvetica;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fefdfd;
+  display: inline;
+}
+
+.NavLink:hover {
+  text-decoration: none;
+  color: #7CFFB5;
+}
+
+.NavPipe {
+  font-family: Helvetica;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fefdfd;
+  display: inline;
+  padding: 0 0.5em 0 0.5em;
+}

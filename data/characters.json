@@ -1,0 +1,68 @@
+[
+	{
+		"PersonalInfo": {
+			"Race": "Human",
+			"Gender": "Female",
+			"Name": "Alyce Bragwaggin",
+			"Personality": "Neutral"
+		},
+		"AbilityScores": {
+			"Strength": 4,
+			"Agility": 8,
+			"Endurance": 4,
+			"Knowledge": 5,
+			"Wisdom": 5,
+			"Charisma": 9
+		},
+		"CharacterTraits": {
+			"Positive": [" Nimble Hands [L]", " Attractive [G]", " Strong Willed [L]"],
+			"P_Values": [2, 4, 2],
+			"Negative": [" Non-Martial [L]", " Flimsy [L]"],
+			"L_Values": [5, 3]
+		},
+		"Focus": {
+			"Focus": "Jack",
+			"Title": "Vagrant"
+		},
+		"Points": {
+			"Trait": {
+				"TPP": 8,
+				"TNP": 8
+			}
+		},
+		"Level": 1
+	},
+	{
+		"PersonalInfo": {
+			"Race": "Human",
+			"Gender": "Male",
+			"Name": "Spathias Jadepaw",
+			"Personality": "Honorable"
+		},
+		"AbilityScores": {
+			"Strength": 8,
+			"Agility": 5,
+			"Endurance": 5,
+			"Knowledge": 4,
+			"Wisdom": 9,
+			"Charisma": 4
+		},
+		"CharacterTraits": {
+			"Positive": [" Strong Willed [G]", " Elementalist [G]"],
+			"P_Values": [4, 3],
+			"Negative": [" Stubborn [L]", " Perceptive [G]"],
+			"L_Values": [2, 5]
+		},
+		"Focus": {
+			"Focus": "Spiritualist",
+			"Title": "Druid"
+		},
+		"Points": {
+			"Trait": {
+				"TPP": 7,
+				"TNP": 7
+			}
+		},
+		"Level": 1
+	}
+]
