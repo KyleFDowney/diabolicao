@@ -1,13 +1,16 @@
 <div ng-controller="myController" class="ng-scope CharacterWrapper">
   <div class="">
     <h2>Characters</h2>
-          <div ng-repeat="character in characters | orderBy:column" class="ng-scope">
+          <div ng-repeat="character in info | orderBy:column" class="ng-scope">
+            <div class="" ng-repeat = "char in character">
+
+
             <!--Name-->
             <hr class="CharacterSeparator">
-            <h3>{{character.PersonalInfo.Name}}</h3>
+            <h3>{{char.PC.PersonalInfo.Name}}</h3>
             <div class="PersonalInfo">
                   <p>
-                    Title: <b>{{character.Focus.Title}}</b>
+                    Title: <b>{{character.PC.Focus.Title}}</b>
                   </br>
                     Personality: <b>{{character.PersonalInfo.Personality}}</b>
                   </br>
@@ -56,7 +59,7 @@
                   Negative: <b>{{(character.CharacterTraits.Negative +'').replace('['/g);}}</b></br>
                 </p>
             </div>
-
+            </div>
           </div>
   </div>
 </div>
